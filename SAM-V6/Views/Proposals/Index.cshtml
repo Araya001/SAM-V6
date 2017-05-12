@@ -1,0 +1,262 @@
+﻿@model IEnumerable<SAM_V6.Models.Proposal>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrganName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Subject)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ActName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Place)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StdBudget)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OthName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OthBudget)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Total)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Act1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Act2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Act3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Act4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Act5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Act6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comment1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result1Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comment2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result2Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comment3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result3Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comment4)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result4Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comment5)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result5Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comment6)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result6Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comment7)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Result7Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Remark)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrganName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Subject)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ActName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StartDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EndDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Place)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StdBudget)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OthName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OthBudget)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Total)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Act1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Act2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Act3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Act4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Act5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Act6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Result1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comment1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Result1Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Result2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comment2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Result2Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Result3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comment3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Result3Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Result4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comment4)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Result4Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Result5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comment5)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Result5Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Result6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comment6)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Result6Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Result7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comment7)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Result7Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Remark)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.DocNo }) |
+            @Html.ActionLink("Details", "Details", new { id=item.DocNo }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.DocNo, did=item.Files.First(f => f.FileType == SAM_V6.Models.FileType.Avatar).FileId})
+           
+        </td>
+    </tr>
+}
+
+</table>
